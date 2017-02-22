@@ -1,0 +1,18 @@
+* ベイズの定理
+
+  $p(H|D) = \cfrac{p(H)p(D|H)}{p(D)}$
+
+  - p(H): 事前確率(prior probability) ゴブリンがいる
+  - p(H|D): 事後確率(posterior probability) 音がしたときにゴブリンがいる
+  - p(D|H): 尤度(likelihood) ゴブリンがいるときに音がする
+  - p(D): 正規化定数(normalizing constant) 音がする
+
+  正規化定数はややこしい。
+
+  - 相互排他(mutually exclusive)
+  - 全体網羅(collectively exhaustive)
+
+  MECEのとき全確率の公式が成り立つ
+
+  $p(D) = \sum^{n}_{k=1}P(D|B_k)P(B_k)$
+  

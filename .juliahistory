@@ -1,0 +1,447 @@
+{}
+{a: 21}
+:a
+{:a 12}
+{:a => 12}
+[:a => 12]
+[:a => 12][:a]
+[:a => 12][1]
+Dict
+Dict{a,2}
+Dict{3,2}
+Dict{3,2}[3]
+Dict(:a => 2, :b => 3)
+Dict(:a => 2, :b => 3)[:a]
+old
+:(foo = "bar")
+:(foo = "bar")[0]
+:(foo = "bar")[1]
+:(foo = "bar")[2]
+:(foo = "bar").head
+:(foo = "bar").args
+:(foo = "bar").typ
+:(foo = "bar")
+:(1 + 1)
+:(1 + 1).typ
+:(1 + 1 :: Int)
+:(1 + 1 :: Int).typ
+:((1 + 1) :: Int).typ
+:((1 + 1) :: Int)
+dump(:((1 + 1) :: Int))
+old
+new
+new
+old
+new
+new
+keys
+values(new)
+sum(values(new))
+|>
+?|>
+1 |> t->t
+1 |> square
+12 |> (t)->(3)
+12 |> (t)->(3).
+12 .|> (t)->(3)
+12 |>. (t)->(3)
+12 |> (t)->(3)
+12 |> (t)->(t*t)
+12 |> (t)->(t*t)
+sum(values(new))
+[:a => 12]
+Dict(:a => 12)
+Dict(:a, 12)
+Dict(:a => 12)
+:a => 12
+Dict((:a, 12))
+Dict((:a => 12))
+Dict((:a => 12), (:b => 13))
+Dict((:a => 12), (:b => 13)) :: Dict
+Dict(:a, :b, :c)
+Dict()
+Dict()[:a] = 3
+fo = Dict()
+fo[:a] = 12
+fo
+?Dict
+`ls -la`
+run(`ls -la`)
+a = run(`ls -la`)
+a
+?Number
+Number
+Dict()
+Pmf
+Pmf(:a=>2)
+Pmf
+methods(Pmf)
+Pmf(Dict(:a => 3))
+normalize_string
+normalize 
+?normalize 
+?normalize
+normalize
+normalize([1,2,3])
+normalize!
+?normalize!
+normalize_string
+normalize
+?normalize
+normalize
+Base.normalize
+Base.normalize
+normalize(Dict{a:=>12, b=>3})
+normalize(Dict(a:=>12, b=>3))
+normalize(Dict(:a =>12, :b =>3))
+normalize(Dict(:a =>12, :b =>3))
+normalize
+methods(normalize)
+normalize(Dict(:a =>12, :b =>3))
+Dict(:a =>12, :b =>3) |> values
+Dict(:a =>12, :b =>3) |> values |> normalize
+normalize(Dict(:a =>12, :b =>3))
+normalize(Dict(:a =>12, :b =>3))
+normalize(Dict(:a =>12, :b =>3))
+normalize(Dict(:a =>12, :b =>3))
+normalize(Dict(:a =>12, :b =>3))
+prob(normalize(Dict(:a =>12, :b =>3)), 3)
+prob(normalize(Dict(:a =>12, :b =>3)), :a)
+prob(normalize(Dict(:a =>12, :b =>3)), 3)
+prob(normalize(Dict(:a =>12, :b =>3)), :a)
+pmf
+pmf
+values(pmf)
+keys(pmf)
+sum(pmf)
+pipe
+pipeline
+pipeline(pmf, values)
+pipeline
+?pipeline
+pipeline
+help(pipeline)
+?help(pipeline)
+?
+?12
+?pipeline
+pipe
+?pipe
+muladd
+?muladd
+?fma
+fma
+code_llvm
+code_llvm(fma, (Int, Int, Int))
+code_llvm(fma, (Array{Int}, Array{Int}, Array{Int}))
+[1,2,3]
+code_llvm(fma, (Array{Int, 1}, Array{Int, 1}, Array{Int, 1}))
+code_llvm(fma, (Array{Int, 1}, Array{Int, 2}, Array{Int, 1}))
+fma([1,2,3], '[2,3,4], 3)
+fma([1,2,3], '[2,3,4], 3)
+fma([1,2,3], [2,3,4]', 3)
+[1,2,3]
+[2,3,4]''
+[2,3,4]'
+[2,3,4]'
+[1,2,3] * [2,3,4]'
+[1,2,3]'' * [2,3,4]'
+[1,2,3]' * [2,3,4]
+fma([1,2,3]', [2,3,4], 3)
+muladd([1,2,3]', [2,3,4], 3)
+quit 8
+quit()
+:a => 2
+type(:a => 2)
+typeof(:a => 2)
+Dict((:a, 2))
+typeof(:a => 2)
+Dict([(:a, 2)])
+Dict([(:a, 2) (:b 3)])
+Dict([(:a, 2); (:b 3)])
+Dict([(:a, 2) (:b, 3)])
+(:a => 2, :b => 3)
+typeof((:a => 2, :b => 3))
+typeof(:a => 2, :b => 3)
+:a => 2, :b => 3
+Dict([1,2,3], [2,3,4])
+ methods(Dict)
+typeof(Dict)
+increment
+a = 
+0
+a+=1
+a
+set!
+pmf
+[1 => 2]
+Dict([1 => 2])
+Dict(1 => 2)
+Dict(1 => 2, 3 => 4)
+Pair(2,3)
+(1,2)
+typeof((1,2))
+Pair
+methods(Dict)
+Pmf
+Pmf(Dict(:a => 2))
+Pmf(:a => 2)
+methods(Pmf)
+methods(Pmf)
+Pmf(:a => 2)
+Pmf(Dict(:a => 2))
+Pmf((:a => 2))
+Pmf((:a => 2))
+Pmf(:a => 2)
+2
+Pmf(Dict(:a => 2))
+methods(Pmf)
+quit()
+Pmf(Dict(:a => 2))
+methods(Pmf)
+Pmf(Dict(:a => 2))
+Pmf(:a => 2)
+Pmf(Dict(:a => 2))
+Pmf(Dict(:a => 2)).dict
+methods(Pmf)
+Dict(Dict(:a => 2))
+quit()
+methods(Pmf)
+Pmf(Dict(:a => 2)).dict
+Pmf(:a => 2).dict
+Pmf([:a => 2]).dict
+MyModule
+MyModule.x
+MyModule.x()
+x()
+using MyModule
+x
+x()
+y()
+p()
+MyModule.p()
+Abb
+methods(normalize)
+quit()
+pmf = Pmf(:a => 0.2)
+pmf
+normalize(pmf)
+normalize(pmf)
+pmf = Pmf(:a => 0.2)
+normalize(pmf)
+[12,3]
+Pmf("a", "b")
+Pmf("a" =>  1)
+[:a, :b, :c]
+methods(Dict)
+Dict()
+Dict(())
+Dict((1,2))
+Dict(2)
+zip([1,2,3], 0)
+zip([1,2,3], 0) |> collect
+zip([1,2,3], [0,0,0]) |> collect
+zip([1,2,3], [0,0,0]) |> collect |> Dict
+zip([1,2,3], [0,0,0]) |> collect |> Pmf
+zeros([12,3,4])
+cookie
+cookie([2,3,4])
+?Dict
+methods(Dict)
+methods(Pmf)
+?cookie
+cookie([2,3,4])
+cookie([2,3,4])
+normalize([2,3,4,5])
+sum(normalize([2,3,4,5]))
+normalize([2,3,4,5], 1)
+normalize([2,3,4,5], 1) |>  sum
+normalize([2,3,4,5], 0) |>  sum
+normalize([2,3,4,5], 2) |>  sum
+normalize([2,3,4,5], 3) |>  sum
+?normalize
+[2,3,4,5] ^ 2
+[2,3,4,5] .* [2,3,4,5]  
+[2,3,4,5] .* [2,3,4,5]  |> sum
+[2,3,4,5] .* [2,3,4,5]  |> sum |> sqrt
+[2,3,4,5] .* [2,3,4,5]  |> sum
+[2,3,4,5] .* [2,3,4,5]  |> sum |> sqrt
+[2,3,4,5] ./ ([2,3,4,5] .* [2,3,4,5]  |> sum |> sqrt)
+[2,3,4,5] ./ ([2,3,4,5] .* [2,3,4,5]  |> sum |> sqrt) |> sum
+[2,3,4,5] ./ ([2,3,4,5] |> su) |> sum
+[2,3,4,5] ./ ([2,3,4,5] |> sum) |> sum
+cookie([2,3,4])
+quit()
+cookie([2,3,4])
+cookie([2,3,4, 5])
+ones(hypos)
+ones([2,3,4])
+ones(3)
+length(["2"])
+function foo() end
+foo
+?foo
+methods(foo)
+foo()
+methods(values)
+quit()
+2
+1
+Dict(2 => 3)
+Pmf
+Pmf(2)
+Pmf(Dict())
+cookie(hypos)
+quit()
+cookie(hypos)
+quit()
+likelihood(cookie(hypos), "vanilla", "Bowl 1")
+likelihood(cookie(hypos), "vanilla", "Bowl 2")
+pmf
+pmf.dict.keys
+pmf.dict.keys
+pmf.dict.values
+keys(pmf.dict)
+pmf.dict
+keys(pmf.dict)
+keys(pmf.dict)
+update!(pmf, "Bowl 1")
+likelihood(pmf, "vanilla", "Bowl 1")
+likelihood(pmf, "vanilla", "Bowl 1")
+update!(pmf, "vanilla")
+pmf
+update!(pmf, "vanilla")
+pmf
+pmf.dict
+pmf.dict |> keys
+likelihood(pmf, "vanilla", "Bowl 1")
+likelihood(pmf, "vanilla", "Bowl 2")
+update!(pmf, "vanilla")
+keys(pmf.dict)
+keys(pmf.dict)[1]
+keys(pmf.dict)[2]
+pmf
+mult!(pmf, "Bowl 1", 0.2)
+mult!(pmf, "Bowl 1", 5)
+normalize!(pmf)
+methods(Pmf)
+Pmf(Dict())
+Pmf(Dict(2 => 3))
+pmf
+pmf
+Dict(1=>2, 2=>3)
+Dict(1=>2, 2=>3)[1]
+Dict(1=>2, 2=>3)[2]
+Dict(1=>2, 2=>3)[3]
+Dict(1=>2, 2=>3)[1]
+Dict(1=>2, 2=>3)[1,2]
+Dict(1=>2, 2=>3)[1:2]
+Dict(1=>2, 2=>3)[[1,2]]
+Dict(1=>2, 2=>3)[1]
+map(Dict(1=>2, 2=>3)) do pair
+print(pair)
+end
+Cookie
+Cookie()
+Cookie(1,2)
+Cookie(Dict(2=>3), Dict(2=>3))
+Cookie(Pmf(2=>3), Dict(2=>3))
+zip([:a, :b, :c], ones(3))
+zip([:a, :b, :c], ones(3))
+Cookie
+methods(Cookie)
+Cookie([1,2,3], Dict())
+Cookie([1,2,3], Dict())
+pmf
+cookie
+quit()
+cookie
+Dict().vals
+Dict().vals
+Dict().vals[0]
+Dict().vals[1]
+Dict().vals[2]
+Dict().vals
+Dict().keys
+cookie
+update!(cookie, "vanilla")
+cookie
+cookie.pmf
+Monty(["ABC"])
+Monty("ABC")
+"ABC"
+Array("ABC")
+split("ABC")
+split("ABC", "")
+r"a"
+typeof(r"a")
+split("ABC", "")
+Monty(["A", "B", "C"])
+monty
+update!(monty, "B")
+12
+quit()
+monty
+update!(monty, "B")
+monty
+methods(update!)
+methods(likelihood)
+methods(Dict)
+Pmf([1,2,3])
+zip([1,2,3],[2,3,4])
+zip([1,2,3],[2,3,4])|> collect
+Pmf([1,2,3])
+Pmf([1,2,3])
+Pmf([1,2,3])
+Pmf([1,2,3])
+update!(monty, "B")
+Pmf([1,2,3])
+update!(monty, "B")
+update!(monty, "B")
+update!(monty, "B")
+update!(monty, "B")
+update!(monty, "B")
+update!(monty, "B")
+update!(monty, "B")
+update!(monty, "B")
+update!(monty, "B")
+update!(monty, "B")
+?include
+2
+quit()
+2
+Dice
+suite
+likelihood
+methods(likelihood)
+update!(suite, 6)
+suite
+suite.pmf
+suite.pmf.dict
+sort!
+?sort!
+methods(sort!)
+pmf
+cookie
+cookie.pmf
+sort(cookie.pmf, by=x->x[2])
+sort(collect(cookie.pmf), by=x->x[2])
+sort(collect(cookie.pmf.dict), by=x->x[2])
+update!(cookie, "chocolate")
+sort(collect(cookie.pmf.dict), by=x->x[2])
+sort!(collect(cookie.pmf.dict), by=x->x[2])
+cookie
+suite
+suite.pmf
+suite.pmf
+string(suite.pmf)
+show
+?show
+show(1)
+"a","b"
+"a"+"b"
+append("a", "b")
+[1,2,3,4,]
+suite.pmf
+print(suite.pmf)
+quit()
