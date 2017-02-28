@@ -77,4 +77,3 @@ function likelihood(monty::Monty, data, hypo)
 end
 
 # monty = Monty(["A", "B", "C"])
-
